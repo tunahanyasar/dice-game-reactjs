@@ -1,0 +1,271 @@
+.dice-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.players-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-bottom: 1px;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.player-name-input {
+  margin-bottom: 2rem;
+}
+
+.player-name-input input {
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.player-name-input input:focus {
+  border-color: #45a049;
+}
+
+.dice-container {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 20px;
+}
+
+.player-dice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.player-dice h2 {
+  color: #333;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.dice {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.1s;
+}
+
+.dice.rolling {
+  animation: roll 0.5s infinite;
+}
+
+@keyframes roll {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  25% { transform: rotateX(180deg) rotateY(0deg); }
+  50% { transform: rotateX(180deg) rotateY(180deg); }
+  75% { transform: rotateX(0deg) rotateY(180deg); }
+  100% { transform: rotateX(0deg) rotateY(0deg); }
+}
+
+.dice-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dice-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+.dice-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* Dice face configurations */
+.face-1 .dot {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.face-2 .dot:nth-child(1) {
+  top: 25%;
+  left: 25%;
+}
+.face-2 .dot:nth-child(2) {
+  bottom: 25%;
+  right: 25%;
+}
+
+.face-3 .dot:nth-child(1) {
+  top: 25%;
+  left: 25%;
+}
+.face-3 .dot:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.face-3 .dot:nth-child(3) {
+  bottom: 25%;
+  right: 25%;
+}
+
+.face-4 .dot:nth-child(1) {
+  top: 25%;
+  left: 25%;
+}
+.face-4 .dot:nth-child(2) {
+  top: 25%;
+  right: 25%;
+}
+.face-4 .dot:nth-child(3) {
+  bottom: 25%;
+  left: 25%;
+}
+.face-4 .dot:nth-child(4) {
+  bottom: 25%;
+  right: 25%;
+}
+
+.face-5 .dot:nth-child(1) {
+  top: 25%;
+  left: 25%;
+}
+.face-5 .dot:nth-child(2) {
+  top: 25%;
+  right: 25%;
+}
+.face-5 .dot:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.face-5 .dot:nth-child(4) {
+  bottom: 25%;
+  left: 25%;
+}
+.face-5 .dot:nth-child(5) {
+  bottom: 25%;
+  right: 25%;
+}
+
+.face-6 .dot:nth-child(1) {
+  top: 25%;
+  left: 25%;
+}
+.face-6 .dot:nth-child(2) {
+  top: 25%;
+  right: 25%;
+}
+.face-6 .dot:nth-child(3) {
+  top: 50%;
+  left: 25%;
+}
+.face-6 .dot:nth-child(4) {
+  top: 50%;
+  right: 25%;
+}
+.face-6 .dot:nth-child(5) {
+  bottom: 25%;
+  left: 25%;
+}
+.face-6 .dot:nth-child(6) {
+  bottom: 25%;
+  right: 25%;
+}
+
+.game-result {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  color: #4CAF50;
+  text-align: center;
+  min-height: 3rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.roll-button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1px;
+}
+
+.roll-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.roll-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 600px) {
+  .players-container {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 0;
+  }
+  .roll-button {
+    width: 100%;
+    max-width: 320px;
+    margin: 16px auto 0 auto;
+    display: block;
+  }
+  .dice-game {
+    padding-top:6rem;
+    padding-bottom: 24px;
+  }
+  h1 {
+    margin-top: 12px;
+  }
+} 

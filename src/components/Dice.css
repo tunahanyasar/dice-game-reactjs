@@ -1,0 +1,33 @@
+.dice {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.1s;
+}
+
+.dice.rolling {
+  animation: roll 0.5s infinite;
+}
+
+@keyframes roll {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  25% { transform: rotateX(180deg) rotateY(0deg); }
+  50% { transform: rotateX(180deg) rotateY(180deg); }
+  75% { transform: rotateX(0deg) rotateY(180deg); }
+  100% { transform: rotateX(0deg) rotateY(0deg); }
+}
+
+.dice-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dice-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+} 

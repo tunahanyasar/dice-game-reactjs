@@ -1,0 +1,61 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  min-width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.player h2 {
+  color: #333;
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.player-name-input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+  text-align: center;
+  width: 150px;
+  background-color: #e3f0fc;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.player-name-input:focus {
+  border-color: #45a049;
+}
+
+.player-name-input:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.dice-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 4px 0 0 0;
+}
+
+.player-title {
+  color: #333;
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .player-title {
+    display: none;
+  }
+} 
