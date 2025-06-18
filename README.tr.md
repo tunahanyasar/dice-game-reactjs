@@ -15,7 +15,7 @@
 
 ## 🚀 Canlı Demo
 
-Oyunu çevrimiçi oyna: [Dice Game | Reactjs](https://dice-game-reactjs.vercel.app/)
+Oyunu çevrimiçi oyna: [Dice Game | Reactjs](https://dice-game-reactjs-gilt.vercel.app/)
 
 ---
 

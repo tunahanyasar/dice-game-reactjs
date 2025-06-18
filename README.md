@@ -15,7 +15,7 @@
 
 ## 🚀 Live Demo
 
-Play the game online: [Dice Game | Reactjs](https://dice-game-reactjs.vercel.app/)
+Play the game online: [Dice Game | Reactjs](https://dice-game-reactjs-gilt.vercel.app/)
 
 ---
 
