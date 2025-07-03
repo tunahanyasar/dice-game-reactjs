@@ -5,7 +5,7 @@
 *Created: April 9, 2025*
 
 - This project is a simple and fun two-player dice game developed with React and Vite.
-- Created as the **Week-9 / React - Dice Game** project for Patika Frontend Bootcamp.
+- Created as the **Week-9 / Assignment-2 | React - Dice Game** project for Patika Frontend Bootcamp.
 - Modern and fully responsive dice game project.
 - Built with **React**, **Vite**, **CSS3**, and **JavaScript**.
 - Developed using component structure and props system.
@@ -41,6 +41,17 @@ npm run dev
 
 ---
 
+## 🎮 How to Play?
+
+1. Each player can enter their own name.
+2. Click the "Roll Dice" button to roll the dice.
+3. Dice will spin with animation.
+4. The result is displayed on the screen:
+   - The player with the higher dice wins.
+   - If equal, it's a draw.
+5. Click "Roll Dice" again for a new round.
+
+---
 ## 📜 Project Structure
 
 :open_file_folder: **Folders and Files:**
@@ -103,6 +114,8 @@ npm run dev
    - Result display
    - Status notifications
 
+---
+
 ## 💡 Technologies & Concepts
 
 **React:**
@@ -141,17 +154,6 @@ npm run dev
 
 ---
 
-## 🎮 How to Play?
-
-1. Each player can enter their own name.
-2. Click the "Roll Dice" button to roll the dice.
-3. Dice will spin with animation.
-4. The result is displayed on the screen:
-   - The player with the higher dice wins.
-   - If equal, it's a draw.
-5. Click "Roll Dice" again for a new round.
-
----
 
 ## 📞 Contact
 

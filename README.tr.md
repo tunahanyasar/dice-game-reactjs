@@ -5,7 +5,7 @@
 *Oluşturulma Tarihi : 9 Nisan 2025*
 
 - Bu proje, React ve Vite ile geliştirilmiş iki oyunculu basit ve eğlenceli bir zar atma oyunudur.
-- Patika Frontend Bootcamp'i kapsamında **Hafta-9 / React - Dice Game** projesi olarak oluşturulmuştur.
+- Patika Frontend Bootcamp'i kapsamında **Hafta-9 / Ödev-2 | React - Dice Game** projesi olarak oluşturulmuştur.
 - Modern ve tamamen responsive bir zar oyunu projesidir.
 - **React**, **Vite**, **CSS3** ve **JavaScript** ile geliştirilmiştir.
 - Component yapısı ve props sistemiyle yazılmıştır.
@@ -41,6 +41,17 @@ npm run dev
 
 ---
 
+
+## 🎮 Nasıl Oynanır?
+
+1. Her oyuncu kendi adını girebilir.
+2. "Zar At" butonuna tıklayarak zarlar atılır.
+3. Zarlar animasyonlu şekilde döner.
+4. Sonuç ekranda gösterilir:
+   - Büyük zar atan oyuncu kazanır.
+   - Eşitlik durumunda berabere.
+5. Yeni tur için tekrar "Zar At" butonuna tıklanır.
+---
 ## 📜 Proje Yapısı
 
 :open_file_folder: **Klasörler ve Dosyalar:**
@@ -103,6 +114,8 @@ npm run dev
    - Sonuç gösterimi
    - Durum bildirimleri
 
+---
+
 ## 💡 Kullanılan Yapılar & Kazanımlar
 
 **React:**
@@ -139,17 +152,6 @@ npm run dev
 ### Responsive
 ![Responsive](./screenshots/responsive.png)
 
----
-
-## 🎮 Nasıl Oynanır?
-
-1. Her oyuncu kendi adını girebilir.
-2. "Zar At" butonuna tıklayarak zarlar atılır.
-3. Zarlar animasyonlu şekilde döner.
-4. Sonuç ekranda gösterilir:
-   - Büyük zar atan oyuncu kazanır.
-   - Eşitlik durumunda berabere.
-5. Yeni tur için tekrar "Zar At" butonuna tıklanır.
 
 ---
 
