@@ -2,7 +2,7 @@
 
 [🇹🇷 Click for Turkish README](./README.tr.md)
 
-*Created: April 9, 2025*
+*Created on: April 9, 2025*
 
 - This project is a simple and fun two-player dice game developed with React and Vite.
 - Created as the **Week-9 / Assignment-2 | React - Dice Game** project for Patika Frontend Bootcamp.
